@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>All Albums</title>
+    <link rel="shortcut icon" href="images/favicon.ico" id="favicon-ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body ng-controller="MainCtrl">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                        <a class="navbar-brand">
+                            <script type="text/javascript">
+                                var myDate = new Date();
+                            
+                                if (myDate.getHours() > 5 && myDate.getHours() <12) {
+                                    document.write("Good Morning " +name);
+                                }
+                                else if(myDate.getHours() >=12 && myDate.getHours() <=17){
+                                    document.write("Good Afternoon " +name);
+                                }
+                                else if (myDate.getHours() > 17 && myDate.getHours() <=24) {
+                                    document.write("Good Evening " +name);
+                                }
+                                else
+                                {
+                                    document.write("Good Night " +name);
+                                }
+                            </script>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link" href="index.html">Home</a>
+                                <a class="nav-item nav-link active" href="all.html">Viwe All Albumes<span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="search.html">Search on Albums</a>
+                                <a class="nav-item nav-link" href="contact.html">Contact Me</a>
+                            </div>
+                        </div>
+
+
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <example-directive></example-directive>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group" ng-repeat="album in albums">
+
+
+                    <li class="list-group-item list-group-item-success">
+                        <td>{{album.id+")"}}</td>
+                        <td>{{album.title}}</td>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <P>AbdulMajeed AlRashd</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js" data-semver="1.5.9"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

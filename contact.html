@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="shortcut icon" href="images/favicon.ico" id="favicon-ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body ng-controller="MainCtrl">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                        <a class="navbar-brand">
+                            <script type="text/javascript">
+                                var myDate = new Date();
+                            
+                                if (myDate.getHours() > 5 && myDate.getHours() <12) {
+                                    document.write("Good Morning " +name);
+                                }
+                                else if(myDate.getHours() >=12 && myDate.getHours() <=17){
+                                    document.write("Good Afternoon " +name);
+                                }
+                                else if (myDate.getHours() > 17 && myDate.getHours() <=24) {
+                                    document.write("Good Evening " +name);
+                                }
+                                else
+                                {
+                                    document.write("Good Night " +name);
+                                }
+                            </script>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link" href="index.html">Home</a>
+                                <a class="nav-item nav-link" href="all.html">Viwe All Albumes</a>
+                                <a class="nav-item nav-link" href="search.html">Search on Albums</a>
+                                <a class="nav-item nav-link active" href="contact.html">Contact Me<span class="sr-only">(current)</span></a>
+                            </div>
+                        </div>
+
+
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 text-center">
+                <img class="img-fluid" src="images/address.png" alt="Search">
+
+                <h5>Address</h5>
+                <Strong>Country : Kingdom of Saudi Arabia
+                <br>
+                        City : Riyadh</Strong>
+            </div>
+
+
+            <div class="col-sm-4 text-center ">
+                <img class="img-fluid" src="images/call.png" alt="Search">
+                <h5>Lets Talk</h5>
+                <strong>
+Gmail :
+<a href="mailto:Aaaalrashd@gmail.com">Aaaalrashd@gmail.com</a>
+                <br>Phone : <a href="tel:+966561113041">+966561113041</a></strong></div>
+
+
+            <div class="col-sm-4 text-center ">
+                <img class="img-fluid" src="images/url.png" alt="Search">
+
+                <h5>get in touch</h5>
+
+                <p><a href="http://linkedin.com/in/abdulmajeed-alrashd-895ab4139"><img class="img-fluid" src="images/in.png" alt="Linkedin">
+                   My Linkedin</a></p>
+                <p>
+                    <a href="http://github.com/aaaalrashd"><img class="img-fluid" src="images/github.png" alt="github">
+                   My Github</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <P>AbdulMajeed AlRashd</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
